@@ -104,23 +104,26 @@ nav.sticky .menu-btn{
 .navbar .menu .menu-btn{
   color: #fff;
 }
-nav .cv-btn{
+nav .social-media {
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .social-media a{
+    width: 50px;
+    height: 50px;
     display: flex;
-    font-family: 'Asul', sans-serif;
-}
-
-nav .cv-btn a{
-    font-size: 20px;
-    font-weight: bold;
-    padding: 5px 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    margin: .5px;
+    font-size: 1.5rem;
     color: black;
-    border-width:2px;
-    border-style:solid;
 }
-
-nav .cv-btn a:hover{
-  color:  #05076d;
-  box-shadow: 0 .125rem .25rem #0018f3;
+nav .social-media a:hover{
+    color:blue;
 }
 
 /* home section styling */
@@ -159,27 +162,24 @@ nav .cv-btn a:hover{
   font-family: 'Combo', cursive;
   font-weight: bold;
 }
-.home .social-media {
-    position: relative;
-    top: 10px;
-    display:flex;
-    justify-content: left;
-    align-items: center;
+
+.cv-btn{
+    display: flex;
+    font-family: 'Asul', sans-serif;
 }
 
-.home .social-media a{
-    line-height: 5rem;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 60px;
-    margin: .5rem;
-    font-size: 2.5rem;
+.cv-btn a{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    color: black;
+    border-width:2px;
+    border-style:solid;
 }
-.home .social-media a:hover{
-    color:blue;
+
+.cv-btn a:hover{
+  color:  #05076d;
+  box-shadow: 0 .125rem .25rem #0018f3;
 }
 .images{
     height: 95%;
@@ -343,8 +343,8 @@ section  .topic{
   font-family: 'Asul', sans-serif;
 }
 
-
 /* My Cert CSS */
+
 .certificates .title-content{
   font-family: 'Combo', cursive;
   font-size: 30px;
@@ -507,9 +507,6 @@ section  .topic{
 
 }
 
-
-
-
 /* Footer CSS */
 footer{
   background: #4070f4;
@@ -563,10 +560,7 @@ footer .text span a:hover{
     width: 90%;
     margin: 40px 0;
   }
-  .services .boxes .box{
-    margin: 20px 0;
-    width: calc(100% / 2 - 20px);
-  }
+
 }
 @media (max-width: 900px) {
   .about .left img{
@@ -609,7 +603,7 @@ footer .text span a:hover{
   .navbar .menu .cancel-btn{
     display: block;
   }
-  nav .cv-btn{
+  nav .social-media{
     display: none;
   }
   .home .text-two{
