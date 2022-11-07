@@ -9,9 +9,8 @@ window.onscroll = function() {
     scrollBtn.style.display = "block";
   }else{
     nav.classList.remove("sticky");
-    scrollBtn.style.display = "auto";
+    scrollBtn.style.display = "none";
   }
-
 }
 
 // Side NavIgation Menu JS Code
