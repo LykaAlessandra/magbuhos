@@ -59,7 +59,7 @@ nav .navbar .logo a{
     letter-spacing: 2px;
 }
 nav .navbar .logo span{
-    color: #f51f10;
+    color: #964B00;
     font-family: 'Dancing Script', cursive;
     font-size: 30px;
     font-weight: 1200;
@@ -80,7 +80,7 @@ nav .navbar .menu li{
   transition: all 0.4s ease;
 }
 .navbar .menu a:hover{
-  color: rgb(243, 12, 139);
+  color: #964B00;
 }
 
 /* Side Navigation Menu Button CSS */
@@ -123,7 +123,7 @@ nav .social-media a{
     color: black;
 }
 nav .social-media a:hover{
-    color:blue;
+    color:#964B00;
 }
 
 /* home section styling */
@@ -150,10 +150,14 @@ nav .social-media a:hover{
   font-weight: bold;
 }
 .home .text-two{
-  color: #0E2431;
-  font-size: 50px;
+  color: black;
+  font-size: 40px;
   font-weight: 600;
   margin-left: -3px;
+}
+.home .text-two span{
+  color: #964B00;
+  font-size: 50px;
 }
 .home .text-three{
   font-size: 30px;
@@ -253,9 +257,9 @@ section .title span::after{
   width: 55%;
 }
 section  .topic{
-  color: #0E2431;
+  color: blue;
   font-size: 40px;
-  font-weight: 500;
+  font-weight: bold;
   margin-bottom: 10px;
 }
 .about-details .right p{
@@ -661,7 +665,7 @@ footer .text span a:hover{
       height: 20px;
       width: 20px;
       border-radius: 50%;
-      background-color: rgb(218, 71, 115);
+      background-color: blue;
       top: 0px;
     }
     .timeline ul li:nth-child(odd)::before {
@@ -673,7 +677,7 @@ footer .text span a:hover{
       left: -30px;
     }
     .timeline ul li:hover::before {
-      background-color: rgb(25, 7, 182);
+      background-color: #964B00;
     }
   }
 
