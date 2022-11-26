@@ -198,7 +198,7 @@ nav .social-media a:hover{
     position:absolute;
     left: 50%;
     bottom:0;
-    transform: translateX(-50%);    
+    transform: translateX(-50%);  
 }
 
 /* About Section Styling */
@@ -472,8 +472,7 @@ section  .topic{
   width: 100%;
   margin: 12px 0;
 }
-.right-side .input-box input,
-.right-side .input-box textarea{
+.right-side .input-box input{
   height: 100%;
   width: 100%;
   border: none;
@@ -487,14 +486,11 @@ section  .topic{
 .right-side .message-box{
   min-height: 110px;
 }
-.right-side .input-box textarea{
-  padding-top: 6px;
-}
 .right-side .button{
   display: inline-block;
   margin-top: 12px;
 }
-.right-side .button input[type="button"]{
+.right-side .button button[type="submit"]{
   color: #fff;
   font-size: 18px;
   outline: none;
@@ -505,31 +501,59 @@ section  .topic{
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.button input[type="button"]:hover{
+.button button[type="submit"]:hover{
   background: #6247da;
   color: rgb(0, 0, 0);
 
 }
-
-/* Footer CSS */
-footer{
-  background: #4070f4;
-  padding: 15px 0;
+.status{
+  width: 90%;
+  max-width: 500px;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
 }
-footer .text span{
-  font-size: 17px;
-  font-weight: 400;
-  color: #fff;
+.status .success{
+  color: blue;
 }
-footer .text span a{
-  font-weight: 500;
-  color: #FFF;
+/* Footer CSS */
+footer .bottom-details{
+  width: 100%;
+  background:#1bbddd;
+  text-align: center;
+
 }
-footer .text span a:hover{
+footer .bottom-details .bottom_text{
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px 40px;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+.bottom-details .bottom_text h3{
+  font-size: 15px;
+  font-weight: 300;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.bottom-details .bottom_text a{
+  font-size: 15px;
+  font-weight: 300;
+  color: rgb(0, 0, 0);
+  opacity: 0.9;
+  text-decoration: none;
+  font-weight: bold;
+}
+.bottom-details .bottom_text a:hover{
+  opacity: 1;
   text-decoration: underline;
 }
+.bottom-details .bottom_text a{
+  margin-right: 10px;
+}
+
 /* Scroll TO Top Button CSS */
 .scroll-button a{
   position: fixed;
@@ -724,4 +748,14 @@ footer .text span a:hover{
    width: 100%;
    margin-left: 0;
  }
+/* Media Query for Footer */
+@media (max-width: 700px){
+  footer{
+    position: relative;
+  }
+
+  .bottom-details .bottom_text h3,
+  .bottom-details .bottom_text a{
+    font-size: 13px;
+  }
 }
