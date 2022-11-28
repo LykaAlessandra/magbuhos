@@ -506,54 +506,28 @@ section  .topic{
   color: rgb(0, 0, 0);
 
 }
-.status{
-  width: 90%;
-  max-width: 500px;
-  text-align: center;
-  padding: 10px;
-  margin: 0 auto;
-  border-radius: 8px;
-}
-.status .success{
-  color: blue;
-}
-/* Footer CSS */
-footer .bottom-details{
-  width: 100%;
-  background:#1bbddd;
-  text-align: center;
 
-}
-footer .bottom-details .bottom_text{
-  max-width: 1200px;
-  margin: auto;
-  padding: 10px 40px;
-  display: flex;
+/* Footer CSS */
+footer{
+  background: #4070f4;
+  padding: 15px 0;
   text-align: center;
+  font-family: 'Asul', sans-serif;
+}
+footer .text span{
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
   justify-content: space-between;
 }
-.bottom-details .bottom_text h3{
-  font-size: 15px;
-  font-weight: 300;
-  color: rgb(0, 0, 0);
-  text-decoration: none;
+footer .text span a{
+  font-weight: 500;
+  color: black;
 }
-.bottom-details .bottom_text a{
-  font-size: 15px;
-  font-weight: 300;
-  color: rgb(0, 0, 0);
-  opacity: 0.9;
-  text-decoration: none;
-  font-weight: bold;
-}
-.bottom-details .bottom_text a:hover{
-  opacity: 1;
+footer .text span a:hover{
   text-decoration: underline;
+  color: white;
 }
-.bottom-details .bottom_text a{
-  margin-right: 10px;
-}
-
 /* Scroll TO Top Button CSS */
 .scroll-button a{
   position: fixed;
@@ -748,14 +722,3 @@ footer .bottom-details .bottom_text{
    width: 100%;
    margin-left: 0;
  }
-/* Media Query for Footer */
-@media (max-width: 700px){
-  footer{
-    position: relative;
-  }
-
-  .bottom-details .bottom_text h3,
-  .bottom-details .bottom_text a{
-    font-size: 13px;
-  }
-}
